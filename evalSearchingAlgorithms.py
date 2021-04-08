@@ -21,9 +21,9 @@ __email__ = "alex.pujols@gmail.com"
 __status__ = "Prototype"
 
 '''
-Title	      :	{TBD}
-Date		  :	{XX-XX-20XX}
-Description   :	{TBD}
+Title	      :	Evaluating Searching Algorithms
+Date		  :	02/02/21
+Description   :	A program to evaluate both linear and binary search with intergers/strings
 Options	      :	{TBD}
 Notes	      :	{TBD}
 '''
@@ -62,7 +62,7 @@ def random_string(size):
     temp_string = ' '.join([random.choice(string.ascii_lowercase) for i in range(size)])
     array = temp_string.split()
     return array
-# Function to perform bubble sort
+# Function to perform linnear search
 def linear_search(array, value):
     index = 0
     # Search entire array index starting with 0
@@ -72,7 +72,7 @@ def linear_search(array, value):
         index = index + 1
     # If no match is found
     return False
-# Function to perfom quicksort
+# Function to perfom binary search
 def binary_search(array, value):
     # Init lower and upper positions
     lower_index = 0
